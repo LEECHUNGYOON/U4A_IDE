@@ -1,0 +1,15 @@
+의왕 PC 접속 정보
+
+1) VPN 접속 URL : https://hkmc-ptrvpn.hyundai.net
+2) VPN ID / PW : VPN16293 / Dami1216@
+3) OTP 입력
+
+4) VDESK 접속 URL : https://vdesk.hmckmc.co.kr
+5) VDESK ID /PW : H2105040 / H/KMC123
+
+IP : 10.20.219.193
+원격 사용자 ID : HAE\9366403
+원격 사용자 PW : Dami1216@
+
+
+
