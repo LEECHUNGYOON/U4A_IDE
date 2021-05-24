@@ -17,10 +17,7 @@ function callUIInsertPopup(UIOBK,retFunc){
               lf_crtUIPopup();
             },
             error: function (r,t,e){ }
-
       });
-
-
   }
 
   function lf_crtUIPopup(){
@@ -38,13 +35,14 @@ function callUIInsertPopup(UIOBK,retFunc){
 
 
     sap.ui.getCore().loadLibrary('sap.ui.layout');
+    sap.ui.getCore().loadLibrary('sap.ui.table');
+    sap.ui.getCore().loadLibrary('sap.m');
 
 
     var oDlg = new sap.m.Dialog({resizable:true,draggable:true});
     oDlg.addStyleClass("sapUiSizeCompact");
 
-  <%--  var oMdl = new sap.ui.model.json.JSONModel();--%>
-    oMdl = new sap.ui.model.json.JSONModel();
+    var oMdl = new sap.ui.model.json.JSONModel();
     oDlg.setModel(oMdl);
 
     oMdl.setData({"T_SEL":lt_sel});
@@ -71,7 +69,7 @@ function callUIInsertPopup(UIOBK,retFunc){
 
     //Aggregation Name DDLB 선택 이벤트.
     oSel1.attachChange(function(){
-  <%--    debugger;--%>
+  
       oMdl.oData.T_LIST = [];
       oMdl.setData({"T_LIST":[]},true);
 
